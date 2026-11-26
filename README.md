@@ -1,4 +1,22 @@
-# Welcome to your organization's demo respository
-This code repository (or "repo") is designed to demonstrate the best GitHub has to offer with the least amount of noise.
+# Neon Bastion
 
-The repo includes an `index.html` file (so it can render a web page), two GitHub Actions workflows, and a CSS stylesheet dependency.
+A self-contained HTML/CSS/JavaScript tower defense game.
+
+## Play
+
+Open `index.html` in a browser, or serve the folder locally:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit `http://localhost:8000`.
+
+## Controls
+
+- Select a tower from the right-hand grid.
+- Click open terrain to place it.
+- Press **Deploy Wave** to begin.
+- Use **Pause** when you need a break.
+
+Build up your credits, survive increasingly large waves, and stop enemies before they reach the neon core.
