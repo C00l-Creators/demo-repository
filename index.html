@@ -13,33 +13,23 @@
       <div><span class="eyebrow">SECTOR 7</span><h1>NEON BASTION</h1></div>
       <div class="stats">
         <div><span>COINS</span><strong id="gold">300</strong></div>
-        <div><span>CORE</span><strong id="lives">20</strong></div>
+        <div><span>CORE HP</span><strong id="lives">100</strong></div>
         <div><span>WAVE</span><strong id="wave">1</strong></div>
       </div>
     </header>
 
     <section class="play-area">
-      <canvas id="game" width="960" height="600" aria-label="Tower defense game"></canvas>
+      <canvas id="game" width="960" height="600" aria-label="Neon Bastion tower defense game"></canvas>
       <aside class="shop">
-        <h2>DEFENSE GRID</h2>
-        <button class="tower-card selected" data-type="pulse">
-          <span class="icon pulse">◆</span><span><strong>PULSE</strong><small>Fast • 100 coins</small></span>
-        </button>
-        <button class="tower-card" data-type="cannon">
-          <span class="icon cannon">⬢</span><span><strong>CANNON</strong><small>Heavy • 160 coins</small></span>
-        </button>
-        <button class="tower-card" data-type="frost">
-          <span class="icon frost">✦</span><span><strong>FROST</strong><small>Slows • 130 coins</small></span>
-        </button>
-        <button id="buy-railgun" class="tower-card rail-card">
-          <span class="icon rail">➤</span><span><strong>RAILGUN <b id="rail-stock">×0</b></strong><small>Buy one • 350 coins</small></span>
-        </button>
+        <div class="shop-heading"><div><span class="eyebrow">ARMORY</span><h2>DEFENSE GRID</h2></div><span id="tower-count">24 UNITS</span></div>
+        <p class="shop-help">Choose a unit, then click open terrain to deploy it.</p>
+        <div id="tower-list" class="tower-list" aria-label="Tower shop"></div>
         <button id="start-wave" class="start">DEPLOY WAVE</button>
       </aside>
     </section>
 
     <footer>
-      <span id="status">Place defenses, then deploy the wave.</span>
+      <span id="status">Choose a defense, place it, then deploy the wave.</span>
       <button id="pause">Ⅱ PAUSE</button>
     </footer>
   </main>
